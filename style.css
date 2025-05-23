@@ -273,7 +273,7 @@ body {
 @keyframes bannerGlowBlue {
   0%,
   100% {
-    color: rgb(62, 62, 255);
+    color: rgb(76, 124, 255);
     text-shadow: 0 0 0 blue;
   }
   50% {

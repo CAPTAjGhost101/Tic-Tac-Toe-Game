@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TIC TAC TOE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="bg-zinc-900">
+    <main class="flex w-full min-h-screen flex-col items-center gap-10 pt-5">
+      <section class="logo bg-black w-auto h-16 flex justify-center items-center rounded-lg shadow-lg shadow-gray-800 p-5">
+        <div class="animate-gradient-ltr text-4xl font-m">TIC TAC TOE</div>
+      </section>
+      <section id="banner" class="result bg-black w-full h-auto flex justify-center items-center overflow-hidden transition-all duration-500">
+        <div id="banner-text">
+          <div id="banner-text" class="text-white text-xlarge banner-text-pinkblue">Start!</div>
+        </div>
+      </section>
+
+      <section class="game-board w-[250px] h-[250px] bg-black grid grid-rows-3 grid-cols-3 gap-1 rounded-lg animated-gradient">
+        <div class="cell bg-gray-800 rounded-tl-lg cursor-pointer relative group"></div>
+        <div class="cell bg-gray-800 cursor-pointer relative group"></div>
+        <div class="cell bg-gray-800 rounded-tr-lg cursor-pointer relative group"></div>
+        <div class="cell bg-gray-800 cursor-pointer relative group"></div>
+        <div class="cell bg-gray-800 cursor-pointer relative group"></div>
+        <div class="cell bg-gray-800 cursor-pointer relative group"></div>
+        <div class="cell bg-gray-800 rounded-bl-lg cursor-pointer relative group"></div>
+        <div class="cell bg-gray-800 cursor-pointer relative group"></div>
+        <div class="cell bg-gray-800 rounded-br-lg cursor-pointer relative group"></div>
+      </section>
+      <button id="play-again-btn" class="play-again-btn rounded-lg px-1 font-regular animate-gradient-ltr">Play Again?</button>
+      <div class="flex gap-2 text-center text-gray-600 animate-gradient-ltr items-center">
+        <div class="text-sm">by</div>
+        <div class="text-lg">Ajay Danu</div>
+      </div>
+    </main>
+    <!-- Hidden SVG templates -->
+    <div id="x-template" class="hidden">
+      <svg viewBox="0 0 100 100" class="w-full h-full stroke-red-500 fill-none stroke-[10]">
+        <line x1="20" y1="20" x2="80" y2="80" />
+        <line x1="80" y1="20" x2="20" y2="80" />
+      </svg>
+    </div>
+
+    <div id="o-template" class="hidden">
+      <svg viewBox="0 0 100 100" class="w-full h-full stroke-blue-500 fill-none stroke-[10]">
+        <circle cx="50" cy="50" r="35" />
+      </svg>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
